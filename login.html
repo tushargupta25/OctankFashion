@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Shop Around</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+        <style>
+            #main-content {
+                padding: 15px 0 80px 0;
+            }
+            .search {
+                width: 50%;
+                margin: auto;
+                min-height: initial;
+            }
+            .search input.field {
+                width: 99% !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="noCognitoMessage" class="configMessage" style="display: none;">
+            <div class="backdrop"></div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">No Cognito User Pool Configured</h3>
+                </div>
+                <div class="panel-body">
+                    <p>There is no user pool configured in <a href="/js/config.js">/js/config.js</a>. You'll configure this in Module 2 of the workshop.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="shell" id="app">
+            <div id="header">
+                <h1 id="logo"><a href="index.html">Shoparound</a></h1>     
+                <div id="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="#" class="active">Sign-In</a></li>
+                        <li><a href="#">The Store</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>           
+            </div>
+            <div id="main">
+                <div id="main-content">
+                    <div class="box search">
+                        <h2>Login</h2>
+                        <div class="box-content">
+                            <form id="signinForm">
+                                <label>Email</label>
+                                <input class="field" type="email" id="emailInputSignin" required>
+                                <label>Password</label>
+                                <input class="field" type="password" id="passwordInputSignin" pattern=".*" required>
+                                <input type="submit" class="search-submit" value="Login" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notices">
+                <div class="cols">
+                    <div class="cl">&nbsp;</div>
+                    <div class="col">
+                        <h3 class="ico ico1">Donec imperdiet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, metus ac cursus auctor, arcu felis ornare dui.</p>
+                        <p class="more"><a href="#" class="bul">Lorem ipsum</a></p>
+                    </div>
+                    <div class="col">
+                        <h3 class="ico ico2">Donec imperdiet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, metus ac cursus auctor, arcu felis ornare dui.</p>
+                        <p class="more"><a href="#" class="bul">Lorem ipsum</a></p>
+                    </div>
+                    <div class="col">
+                        <h3 class="ico ico3">Donec imperdiet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, metus ac cursus auctor, arcu felis ornare dui.</p>
+                        <p class="more"><a href="#" class="bul">Lorem ipsum</a></p>
+                    </div>
+                    <div class="col col-last">
+                        <h3 class="ico ico4">Donec imperdiet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, metus ac cursus auctor, arcu felis ornare dui.</p>
+                        <p class="more"><a href="#" class="bul">Lorem ipsum</a></p>
+                    </div>
+                    <div class="cl">&nbsp;</div>
+                </div>
+            </div>
+            <div id="footer">
+                <p class="left"> <a href="#">Home</a> <span>|</span> <a href="#">Support</a> <span>|</span> <a href="#">My Account</a> <span>|</span> <a href="#">The Store</a> <span>|</span> <a href="#">Contact</a> </p>
+                <p class="right"> &copy; 2020 Shop Around. Design by <a href="http://chocotemplates.com">Chocotemplates.com</a> </p>
+            </div>
+        </div>
+        <script src="js/vendor/jquery-3.1.0.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+    </body>
+</html>
